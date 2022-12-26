@@ -25,7 +25,21 @@ void PrintArray(string[] array)
     }
     Console.WriteLine("]");
 }
-
+// Метод выбора элементов размером до трех знаков.
+string[] SerchingLessThreeSymbolsElements(string[] array)
+{
+    string[] elementsSearch = new string[array.Length];
+    int count = 0;
+    for (int i = 0; i < array.Length; i++)
+    {
+        if (array[i].Length < 4)
+        {
+            elementsSearch[count] = array[i];
+            count++;
+        }
+    }
+    return elementsSearch;
+}
 
 Console.WriteLine("Заданный массив: ");
 PrintArray(arr);
