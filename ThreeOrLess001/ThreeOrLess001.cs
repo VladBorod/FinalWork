@@ -40,6 +40,17 @@ string[] SerchingLessThreeSymbolsElements(string[] array)
     }
     return elementsSearch;
 }
+// Метод вывода элементов подходящих заданному условию.
+void PrintArraySearching(string[] searchingArray)
+{
+    for (int i = 0; i < searchingArray.Length; i++)
+    {
+        Console.Write(searchingArray[i] + " ");
+    }
+}
 
 Console.WriteLine("Заданный массив: ");
 PrintArray(arr);
+Console.WriteLine("Элементы массива размером три и менее знаков: ");
+string[] searchingElements = SerchingLessThreeSymbolsElements(arr);
+PrintArraySearching(searchingElements);
