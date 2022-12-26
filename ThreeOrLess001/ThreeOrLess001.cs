@@ -12,7 +12,10 @@ string[] arr =  {"hello", "2", "world",
                     "Vitality", "High eay to hell",
                     "Kill fish", "Best boxer", "Cool look",
                     "333", "222", "do", "what", "gap",
-                    "Clown", "it", "this", "is", "all"};
+                    "Clown", "it", "this", "is", "all",
+                    "count my counts please", "rock n roll",
+                    "000", "1111", "-~-", "]![", "```",
+                    "ЖжЖ", "YyY", "Yeu Yeu"};
 
 // Метод вывода заданного массива.
 void PrintArray(string[] array)
@@ -45,7 +48,7 @@ void PrintArraySearching(string[] searchingArray)
 {
     for (int i = 0; i < searchingArray.Length; i++)
     {
-        Console.Write(searchingArray[i] + " ");
+        Console.Write(searchingArray[i] + "   ");
     }
 }
 
